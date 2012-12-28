@@ -1,0 +1,12 @@
+This is a temporary POC implementation of abstract UNIX domain sockets on
+Android using a client in C that connects to a Java server.
+
+The client executes the Java server using the "am start" command
+
+Execute:
+
+(push PINEntry.apk first)
+
+ndk-build 
+adb push libs/armeabi/pinentry-android /data/local/tmp/ 
+adb shell /data/local/tmp/pinentry-android
